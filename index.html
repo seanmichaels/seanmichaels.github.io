@@ -78,17 +78,17 @@
         </table>
         <p>Select your favorite album:</p>
 <form action="/action_page.php">
-  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Internet Explorer">Jazz<br>
-  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Firefox">Queen<br>
-  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Opera">The Miracle<br>
+  <input type="radio" name="album" onclick="myFunction(this.value)" value="Jazz">Jazz<br>
+  <input type="radio" name="album" onclick="myFunction(this.value)" value="Queen">Queen<br>
+  <input type="radio" name="album" onclick="myFunction(this.value)" value="The Miracle">The Miracle<br>
  
-  Your favorite browser is: <input type="text" id="result">
+  Your favorite album is: <input type="text" id="result">
   <input type="submit" value="Submit form">
 </form>
 
 <script>
-function myFunction(browser) {
-    document.getElementById("result").value = browser;
+function myFunction(album) {
+    document.getElementById("result").value = album;
 }
 </script>
     </body>
