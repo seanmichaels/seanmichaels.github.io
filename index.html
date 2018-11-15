@@ -76,6 +76,21 @@
                 <td>Another one of Queen's famous albums is "Queen" which, of course, is named after them. It was released on July 13, 1973.</td>
             </tr>
         </table>
+        <p>Select your favorite album:</p>
+<form action="/action_page.php">
+  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Internet Explorer">Jazz<br>
+  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Firefox">Queen<br>
+  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Opera">The Miracle<br>
+ 
+  Your favorite browser is: <input type="text" id="result">
+  <input type="submit" value="Submit form">
+</form>
+
+<script>
+function myFunction(browser) {
+    document.getElementById("result").value = browser;
+}
+</script>
     </body>
 
 </html>
